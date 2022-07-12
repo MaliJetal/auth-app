@@ -8,5 +8,5 @@ export const Input = styled.input`
 	color: gray;
 	margin: 5px;
 	padding: 5px;
-	width: 60%;
+	width: 65%;
 `;

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-import { Pagelayout, Card, Input, FormButton } from "components/common";
+import { Pagelayout, Card, Input, FormButton } from "../common";
 
 function Login() {
-	const [errorMessage, setErrorMessage] = useState("");
+	const [errorMessage] = useState("");
 	const [emailValue, setEmailValue] = useState("");
 	const [password, setPassword] = useState("");
 

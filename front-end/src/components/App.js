@@ -5,7 +5,7 @@ import { createGlobalStyle } from "styled-components";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
-import PrivateRoute from "./pages/PrivateRoute";
+// import PrivateRoute from "./pages/PrivateRoute";
 // import UserDetails from "./page/UserDetails";
 
 const GlobalStyle = createGlobalStyle`
@@ -23,9 +23,9 @@ function App() {
 			<GlobalStyle />
 			<Router>
 				<Routes>
-					<PrivateRoute>
-						{/* <Route exact path='/user-details' element={<UserDetails />} /> */}
-					</PrivateRoute>
+					{/* <PrivateRoute>
+						<Route exact path='/user-details' element={<UserDetails />} />
+					</PrivateRoute> */}
 					<Route exact path='/' element={<Home />} />
 					<Route exact path='/login' element={<Login />} />
 					<Route exact path='/signup' element={<SignUp />} />
