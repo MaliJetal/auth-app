@@ -1,5 +1,5 @@
 import React from "react";
-import { Pagelayout, Button } from "components/common";
+import { Pagelayout, Button } from "../common";
 
 function Home() {
 	return (

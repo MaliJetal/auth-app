@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link as RouterLink, useLocation } from "react-router-dom";
-import GiHamburgerMenu from 'react-icons/gi';
+// import GiHamburgerMenu from 'react-icons/gi';
 
 const HeaderWrapper = styled.header`
 	height: 60px;
@@ -11,9 +11,8 @@ const HeaderWrapper = styled.header`
 	background: linear-gradient(to right, #f8049c, #fdd54f);
 	border-bottom: 2px solid #fdd54f;
 
-  @media(min-width:750px){
-    
-  }
+	@media (min-width: 750px) {
+	}
 `;
 
 const Nav = styled.nav`
@@ -53,11 +52,14 @@ export function Header() {
 	return (
 		<HeaderWrapper>
 			<Nav>
-				<StyledLink to='/home' isActive={pathname === "/"}>
+				<StyledLink to='/' isActive={pathname === "/"}>
 					Home
 				</StyledLink>
 				<StyledLink to='/login' isActive={pathname === "/login"}>
 					Login
+				</StyledLink>
+				<StyledLink to='/signup' isActive={pathname === "/signup"}>
+					Sign Up
 				</StyledLink>
 			</Nav>
 		</HeaderWrapper>

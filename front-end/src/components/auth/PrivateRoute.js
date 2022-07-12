@@ -1,7 +1,9 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
+import { useUser } from "./useUser";
 
-const PrivateRoute = ({ user }) => {
+const PrivateRoute = () => {
+	const [user] = useUser();
 	if (!user) {
 		<Navigate to='/login' />;
 	}
